@@ -24,7 +24,8 @@
     "clean": "rimraf lib",
     "build": "tsc",
     "lint": "eslint './src/**/*.{ts,js}' --ignore-pattern 'build' --ignore-pattern 'yarn.lock'",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
